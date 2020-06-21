@@ -1,0 +1,89 @@
+/*
+/* Custom 5mm Pulley
+/*
+/* Only thing that needs to be changed is the number of teeth in the parameters unless changing belt profile
+/*
+
+/* Created by Nitin from FTC Team 18172 Uplift Robotics
+/* We would greatly appreciate it if you let our team know if you found our resources helpful :)
+
+/* Parameters that I created:
+/* Number_of_Teeth (N_Teeth) (also integers)
+/* Pitch
+/* Width
+/* Locked Parameters:
+/* Pitch_Diameter
+/* Inner_Diameter
+/* Outer_Diameter
+/* Root_Diameter
+
+
+/*
+/* Pulley Dimensions
+/*
+
+/* Note: When Belt Width is given, input belt width directly into the parameter WIDTH with no adjustments
+
+/* Pitch Diameter - Calculated in reference to the belt's pitch diameter
+PITCH_DIAMETER=N_TEETH*PITCH/pi
+
+/* Inner Diameter -  Diameter of the circle encompassing the teeth but not the belt
+INNER_DIAMETER=PITCH_DIAMETER-0.57*2
+
+/* Outer Diameter - Diameter of the circle encompassing both the belt and the teeth
+OUTER_DIAMETER=INNER_DIAMETER+1.74*2
+
+/* Root Diameter - Diameter of the circle from which the teeth are made
+ROOT_DIAMETER=INNER_DIAMETER-2.06*2
+
+/* Basically the Big Extrude in the middle of the pulley
+d1=PITCH_DIAMETER
+
+/* Width of the teeth is slightly larger than the width of the belt
+d0=WIDTH*31/30
+
+/*
+/* Pulley Teeth Dimensions
+/*
+
+/* Radius of the Outer Teeth Sketch Circle
+d10=INNER_DIAMETER/2
+
+/* Raduis of the Inner Teeth Sketch Circle
+d6=ROOT_DIAMETER/2
+
+/* Angle for the Midline for the tooth profile
+d8=180/N_TEETH
+
+/* Angle for the Endline for the tooth profile
+d27=360/N_TEETH
+
+/* Number of Teeth in the pattern 
+p25=N_TEETH
+
+/*
+/* Belt Type specific Dimensions
+/*
+
+/* Circle Radius for the Cavity for the Belt tooth
+d20=1.49
+
+/* Circle Radius for the protrusion of the tooth into the belt
+d21=0.43
+
+/*
+/* Pulley Flange Dimensions
+/*
+
+/* Radius for the Tip of the flange to encompass the belt inside the pulley
+d34=OUTER_DIAMETER/2
+
+/* Radius for the inner edge of the flange to connect the pulley and the flange
+d31=INNER_DIAMETER/2
+
+/* Belt profile specfic since I was too lazy to define an equation for this 
+/* Width of the whole flange
+d35=1.35
+
+/* Center Datum Plane where the flange is mirrored
+d4=d0/2
