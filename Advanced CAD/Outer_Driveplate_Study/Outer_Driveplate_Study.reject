@@ -1,0 +1,20 @@
+$FINITE  Element Mesh - PTC Inc. - Genesis 6.4 - OUTER_DRIVEPLATE_EX
+$
+$EXECUT ive Control 
+$
+$SOLUTI on Control
+$
+$
+$PARAME ters
+$
+$
+$TOPOLO gy Optimization definitions
+$
+$GLOBAL  Coordinate System of the model
+$------ ----------------------------------
+$MESH"  OUTER_DRIVEPLATE_EX"
+$INCLUD ed Components :
+$OUTE   R_DRIVEPLATE_EX
+$COORDI nate System for grid coordinates
+$COORDI nate System for default grid displacement
+$------ ----------------------------------

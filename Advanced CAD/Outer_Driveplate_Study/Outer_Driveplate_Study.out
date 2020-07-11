@@ -1,0 +1,2813 @@
+1
+
+
+
+
+
+
+
+
+
+                                         GGGG    EEEEE   N   N   EEEEE    SSSSS   IIIII    SSSSS
+                                        G        E       NN  N   E       S          I     S     
+                                        G   GG   EEEE    N N N   EEEE     SSSS      I      SSSS 
+                                        G    G   E       N  NN   E            S     I          S
+                                         GGGG    EEEEE   N   N   EEEEE   SSSSS    IIIII   SSSSS 
+
+
+                                             STRUCTURAL ANALYSIS AND OPTIMIZATION SOFTWARE      
+
+
+
+                                                          COPYRIGHT, 1991-2018           
+
+                                                VANDERPLAATS RESEARCH & DEVELOPMENT, INC.
+
+                                                     ALL RIGHTS RESERVED, WORLDWIDE      
+
+                                                              VERSION 18.0
+
+                                                       BUILD CODE r1920/r68        
+
+
+
+
+     PROJECT NAME: Outer_Driveplate_Study
+     RUN STARTED:  Jun 30, 2020 16:32
+     SYSTEM TYPE:  Windows 8 x86_64 4-CPU 15GB (LP64)
+     LENVEC:             512000000
+     IOBUFF:               32,512K
+     THREADS:                    1
+
+     LICENSED TO: Creo Parametric Topology Optimization User                  
+
+
+
+     WARNING MESSAGE FROM SUBROUTINE     GN12DO
+     WARNING CODE =  129758
+     WARNING: DOPT PARAMETER "DINDEXM" HAS BEEN ASSIGNED 
+     THE VALUE OF "TINDEXM". THE FINAL VALUES ARE :
+     TINDEXM =        0
+     DINDEXM =        0
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE     1
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                       ANALYSIS PROBLEM SUMMARY
+
+                                             NUMBER OF GRID POINTS:                   6667
+                                             NUMBER OF LOCAL COORDINATE SYSTEMS:         3
+                                             NUMBER OF CTETRA (4 NODE) ELEMENTS:     19701
+                                             TOTAL NUMBER OF NON RIGID ELEMENTS:     19701
+                                             NUMBER OF ELEMENT PROPERTIES:           14637
+                                             NUMBER OF MATERIALS:                    14637
+                                             NUMBER OF DEGREES OF FREEDOM:           19569
+
+
+
+                                                     TOPOLOGY OPTIMIZATION PROBLEM SUMMARY
+
+                                        OBJECTIVE FUNCTION:       MINIMIZE             
+                                        NUMBER OF TOPOLOGY REGIONS:                          1
+                                        TCYCLE METHOD USED:                                  0
+                                        POLEM METHOD USED:                                   0
+                                        TOTAL NUMBER OF TOPOLOGY INDEP. VARIABLES:         162
+                                        NUMBER OF TOPOLOGY  DEPEN. DESIGN VARIABLES:     14634
+                                        TOTAL NUMBER OF TOPOLOGY DESIGN VARIABLES:       14796
+                                        NUMBER OF TOPOLOGY  DESIGNABLE ELEMENTS:         14634
+                                        NUMBER OF TOPOLOGY DIRECT RESPONSES:                 2
+                                        NUMBER OF POTENTIAL TOPOLOGY CONSTRAINTS:            2
+
+
+
+                                                         LOAD CASES SUMMARY
+
+                                            NUMBER OF STATIC LOAD CASES:                   1
+                                            TOTAL NUMBER OF LOAD CASES:                    1
+ 
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     4939 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     4940 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     4941 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     4942 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     4943 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     4944 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     4945 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     4946 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     5175 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+
+     WARNING MESSAGE FROM SUBROUTINE "GN32AF"
+     WARNING CODE =  300151
+     A FORCE IN LOAD SET        7 IS APPLIED TO A PERMANENTLY
+     CONSTRAINED DEGREE OF FREEDOM (GRID ID     5176 COMP 1).
+     NOTE: A DOF MAY BE PERMANENTLY CONSTRAINED BECAUSE:
+           1) IT IS LISTED ON GRID ENTRY FIELD 8 (PS) -OR-
+           2) IT HAS SPC APPLIED IN EVERY LOADCASE -OR-
+           3) IT DOES NOT CONNECT TO ANY ELEMENTS
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE     2
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      0 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE     3
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.825084E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.922811E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE     4
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE     5
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  1.211180E-11 ; STRAIN ENERGY :  6.050562E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE     6
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE     7
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -7.59262582E-08      6.09369675E-08     -8.04108005E-06      2.15189491E+01     -1.26701665E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE     8
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE     9
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          9.06464159E+04      2.13845714E+04     -8.50578622E+04     -2.29048662E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    10
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          3.01942076E-01      3.01941760E-01      7.70205803E-05     -4.30050172E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    11
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      0 (ANALYSIS)*
+                                   ********************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    12
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                       R I G I D   B O D Y   M A S S   M A T R I X
+                                   I N   B A S I C   C O O R D I N A T E   S Y S T E M
+                                               A T   G R D P N T  =        0
+
+                           MX            MXY            MXZ           MTR11           MTR12         MTR13
+                           MYX           MY             MYZ           MTR21           MTR22         MTR23
+                           MZX           MZY            MZ            MTR31           MTR32         MTR33
+                          MTR11         MTR21          MTR31             IXX          -IXY          -IXZ
+                          MTR12         MTR22          MTR32            -IYX           IYY          -IYZ
+                          MTR13         MTR23          MTR33            -IZX          -IZY           IZZ 
+
+                      1.825084E-01   0.000000E+00   0.000000E+00   0.000000E+00   8.797738E-08   2.088169E-06
+                      0.000000E+00   1.825084E-01   0.000000E+00  -8.797738E-08   0.000000E+00  -5.993375E-06
+                      0.000000E+00   0.000000E+00   1.825084E-01  -2.088169E-06   5.993375E-06   0.000000E+00
+                      0.000000E+00  -8.797738E-08  -2.088169E-06   3.001812E+03   4.391010E-06   4.651735E-05
+                      8.797738E-08   0.000000E+00   5.993375E-06   4.391010E-06   8.731488E+01  -1.087055E-04
+                      2.088169E-06  -5.993375E-06   0.000000E+00   4.651735E-05  -1.087055E-04   2.914804E+03
+  
+
+                                          P R I N C I P A L   I N E R T I A S 
+                                              A T   G R D P N T  =       0
+
+                                           I1             I2             I3
+
+                                       3.001812E+03   2.914804E+03   8.731488E+01
+  
+
+                                  P R I N C I P A L   I N E R T I A   D I R E C T I O N S 
+                                              A T  G R D P N T  =       0
+
+                                           X1             X2             X3
+                                           Y1             Y2             Y3
+                                           Z1             Z2             Z3
+
+                                       1.000000E+00   5.346316E-07  -1.506610E-09
+                                       1.506590E-09   3.844594E-08   1.000000E+00
+                                       5.346316E-07  -1.000000E+00   3.844594E-08
+  
+
+                                           C E N T E R   O F   G R A V I T Y 
+                                 W I T H   R E S P E C T   T O   G R D P N T  =       0
+
+                             DIRECTION
+                          MASS AXIS SYSTEM     MASS          X-C.G.         Y-C.G.         Z-C.G.
+
+                                 X         1.825084E-01   0.000000E+00  -1.144150E-05   4.820458E-07
+                                 Y         1.825084E-01  -3.283890E-05   0.000000E+00   4.820458E-07
+                                 Z         1.825084E-01  -3.283890E-05  -1.144150E-05   0.000000E+00
+  
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    13
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                             S Y S T E M   I N E R T I A S  
+                                  I N   B A S I C   C O O R D I N A T E   S Y S T E M
+                                        A T   C E N T E R   O F   G R A V I T Y
+
+                                           IXX            IXY            IXZ
+                                           IYX            IYY            IYZ
+                                           IZX            IZY            IZZ
+
+                                       3.001812E+03  -4.391078E-06  -4.651735E-05
+                                      -4.391078E-06   8.731488E+01   1.087055E-04
+                                      -4.651735E-05   1.087055E-04   2.914804E+03
+  
+
+                                          P R I N C I P A L   I N E R T I A S 
+                                        A T   C E N T E R   O F   G R A V I T Y
+
+                                           I1             I2             I3
+
+                                       3.001812E+03   2.914804E+03   8.731488E+01
+  
+
+                                  P R I N C I P A L   I N E R T I A   D I R E C T I O N S 
+                                        A T   C E N T E R   O F   G R A V I T Y
+
+                                           X1             X2             X3
+                                           Y1             Y2             Y3
+                                           Z1             Z2             Z3
+
+                                       1.000000E+00   5.346316E-07  -1.506634E-09
+                                       1.506613E-09   3.844594E-08   1.000000E+00
+                                       5.346316E-07  -1.000000E+00   3.844594E-08
+  
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    14
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      0 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  6.050562E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    15
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              6.000000E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    16
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      1 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    17
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821736E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919283E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    18
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    19
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL : -2.071984E-11 ; STRAIN ENERGY :  5.459628E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    20
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    21
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -5.61525507E-08      7.89646304E-08     -4.91199945E-06      2.15189514E+01     -1.26701987E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    22
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    23
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          9.54690945E+04      2.23996613E+04     -8.97249448E+04     -2.37073289E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    24
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          2.73153608E-01      2.73153244E-01      6.54196625E-05     -4.41378223E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    25
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      1 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  5.459628E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    26
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982081E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    27
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      2 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    28
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821736E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919283E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    29
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    30
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  2.116708E-11 ; STRAIN ENERGY :  4.942634E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    31
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    32
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -6.77345686E-08      1.32689884E-07     -2.91093770E-06      2.15189485E+01     -1.26701543E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    33
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    34
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          9.92872883E+04      2.31244729E+04     -9.34452099E+04     -2.43149567E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    35
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          2.47679328E-01      2.47678945E-01      5.57493696E-05     -4.32213633E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    36
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      2 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  4.942634E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    37
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982082E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    38
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      3 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    39
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821737E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919285E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    40
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    41
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  5.327780E-13 ; STRAIN ENERGY :  4.501960E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    42
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    43
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -9.57238335E-08     -1.38046019E-08     -2.24407858E-06      2.15189466E+01     -1.26701996E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    44
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    45
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.02541700E+05      2.36512011E+04     -9.66478051E+04     -2.47915870E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    46
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          2.25637246E-01      2.25636871E-01      4.74096127E-05     -4.08949450E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    47
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      3 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  4.501960E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    48
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982088E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    49
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      4 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    50
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821739E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919286E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    51
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    52
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL : -5.470237E-11 ; STRAIN ENERGY :  4.127689E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    53
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    54
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -1.53589972E-08      7.31094749E-08      2.64256633E-07      2.15189457E+01     -1.26701904E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    55
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    56
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.05014603E+05      2.39493645E+04     -9.91088541E+04     -2.51382131E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    57
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          2.06795973E-01      2.06795623E-01      4.07689949E-05     -3.78287994E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    58
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      4 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  4.127689E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    59
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982097E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    60
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      5 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    61
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821726E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919273E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    62
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    63
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL : -2.119713E-12 ; STRAIN ENERGY :  3.810614E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    64
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    65
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -5.46115775E-08      2.76329248E-08     -8.16986318E-07      2.15189524E+01     -1.26702011E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    66
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    67
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.06855291E+05      2.40622490E+04     -1.00966624E+05     -2.53929544E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    68
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.90822225E-01      1.90821912E-01      3.55981428E-05     -3.43851880E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    69
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      5 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  3.810614E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    70
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982029E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    71
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      6 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    72
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821722E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919269E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    73
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    74
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  2.709440E-12 ; STRAIN ENERGY :  3.540312E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    75
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    76
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -1.18140324E-08      6.46876326E-08     -1.26925845E-06      2.15189503E+01     -1.26701361E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    77
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    78
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.08490476E+05      2.40717365E+04     -1.02637396E+05     -2.56183506E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    79
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.77079958E-01      1.77079687E-01      3.17989989E-05     -3.07999868E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    80
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      6 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  3.540312E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    81
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982006E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    82
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      7 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    83
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821740E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919288E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    84
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    85
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  9.587127E-12 ; STRAIN ENERGY :  3.308944E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    86
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    87
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -1.74045323E-08      3.26923177E-08     -3.33393681E-06      2.15189477E+01     -1.26700956E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    88
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    89
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09373872E+05      2.38849252E+04     -1.03585349E+05     -2.57338233E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    90
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.65670123E-01      1.65669881E-01      2.90701705E-05     -2.81606723E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    91
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      7 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  3.308944E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    92
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982103E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    93
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      8 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    94
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821720E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919267E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    95
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    96
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL : -4.668953E-11 ; STRAIN ENERGY :  3.105977E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    97
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    98
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -5.96114751E-08      4.13259915E-08      1.12256472E-07      2.15189481E+01     -1.26701607E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE    99
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   100
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09730628E+05      2.35481418E+04     -1.04033155E+05     -2.57565193E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   101
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.55597900E-01      1.55597662E-01      2.69972335E-05     -2.71276824E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   102
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      8 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  3.105977E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   103
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.981999E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   104
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E      9 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   105
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821727E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919275E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   106
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   107
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL : -7.258410E-12 ; STRAIN ENERGY :  3.027676E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   108
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   109
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -1.91915484E-09      6.87058297E-08     -2.06706211E-06      2.15189514E+01     -1.26701539E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   110
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   111
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09807335E+05      2.35043628E+04     -1.04153135E+05     -2.56382548E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   112
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.51243408E-01      1.51243127E-01      2.58357190E-05     -2.90548237E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   113
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E      9 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  3.027676E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   114
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982037E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   115
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     10 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   116
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821726E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919273E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   117
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   118
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL : -1.125875E-12 ; STRAIN ENERGY :  2.979998E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   119
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   120
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05      6.72516454E-09      3.11095839E-08     -3.24911468E-06      2.15189507E+01     -1.26702091E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   121
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   122
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09782838E+05      2.34461071E+04     -1.04166322E+05     -2.55329007E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   123
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.47448202E-01      1.47447889E-01      2.41298363E-05     -3.02832683E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   124
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     10 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.979998E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   125
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982031E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   126
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     11 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   127
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821726E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919274E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   128
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   129
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  2.933846E-11 ; STRAIN ENERGY :  2.940049E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   130
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   131
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -1.07044626E-08     -1.51870145E-08      9.97644700E-08      2.15189505E+01     -1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   132
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   133
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09678047E+05      2.33871008E+04     -1.04096911E+05     -2.54194933E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   134
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.45772461E-01      1.45772119E-01      2.25864786E-05     -3.15116402E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   135
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     11 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.940049E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   136
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982032E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   137
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     12 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   138
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821726E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919273E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   139
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   140
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  9.952209E-12 ; STRAIN ENERGY :  2.971527E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   141
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   142
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -3.48455402E-08      1.59235658E-09     -3.90672918E-06      2.15189472E+01     -1.26701577E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   143
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   144
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09393143E+05      2.33012350E+04     -1.03844142E+05     -2.53042786E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   145
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          2038          3.07876726E-01      3.07374081E-01      1.72025973E-02     -3.65014469E-03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   146
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     12 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.971527E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   147
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982031E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   148
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     13 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   149
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821725E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919272E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   150
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   151
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  4.692790E-11 ; STRAIN ENERGY :  2.902450E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   152
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   153
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -1.54259006E-08      5.39856366E-08     -1.21633693E-06      2.15189528E+01     -1.26701920E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   154
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   155
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09351489E+05      2.32850306E+04     -1.03808601E+05     -2.52849746E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   156
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.43562635E-01      1.43562267E-01      2.14467131E-05     -3.24330092E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   157
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     13 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.902450E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   158
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982025E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   159
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     14 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   160
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821726E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919273E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   161
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   162
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  1.510492E-11 ; STRAIN ENERGY :  2.893512E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   163
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   164
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -5.73701928E-08      4.59729916E-08     -1.98186527E-06      2.15189473E+01     -1.26701847E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   165
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   166
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09350129E+05      2.32728119E+04     -1.03813051E+05     -2.52720686E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   167
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.43158645E-01      1.43158269E-01      2.12142966E-05     -3.27353313E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   168
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     14 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.893512E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   169
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982031E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   170
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     15 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   171
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821719E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919265E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   172
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   173
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  1.623959E-11 ; STRAIN ENERGY :  2.878088E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   174
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   175
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05      4.68219091E-08      9.04371249E-09     -3.68446619E-06      2.15189495E+01     -1.26701097E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   176
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   177
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09189511E+05      2.32338942E+04     -1.03665568E+05     -2.52187534E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   178
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.42508306E-01      1.42507926E-01      2.10172230E-05     -3.28690768E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   179
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     15 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.878088E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   180
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.981990E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   181
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     16 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   182
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821727E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919275E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   183
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   184
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  6.261811E-12 ; STRAIN ENERGY :  2.871992E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   185
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   186
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05      1.06081909E-08      3.74771822E-08     -2.08316735E-06      2.15189474E+01     -1.26701813E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   187
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   188
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09124635E+05      2.32099242E+04     -1.03607266E+05     -2.51996007E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   189
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.42023663E-01      1.42023279E-01      2.08527606E-05     -3.29391316E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   190
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     16 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.871992E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   191
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982037E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   192
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     17 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   193
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821717E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919263E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   194
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   195
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  9.258868E-12 ; STRAIN ENERGY :  2.863240E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   196
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   197
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -4.15315297E-08      1.23099326E-08     -8.15245310E-07      2.15189514E+01     -1.26701415E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   198
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   199
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.09006588E+05      2.31805210E+04     -1.03499068E+05     -2.51603390E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   200
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.41538227E-01      1.41537841E-01      2.08328483E-05     -3.30058723E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   201
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     17 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.863240E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   202
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.981981E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   203
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     18 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   204
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821718E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919265E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   205
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   206
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  1.410395E-12 ; STRAIN ENERGY :  2.854726E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   207
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   208
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05      1.30144584E-09      9.60754650E-08     -2.90424502E-06      2.15189481E+01     -1.26700951E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   209
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   210
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.08950866E+05      2.31629263E+04     -1.03450099E+05     -2.51365673E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   211
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.41358024E-01      1.41357638E-01      2.08025809E-05     -3.29986458E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   212
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     18 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.854726E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   213
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.981987E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   214
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     19 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   215
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821720E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919267E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   216
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   217
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL : -7.081357E-12 ; STRAIN ENERGY :  2.848644E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   218
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   219
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -1.16626667E-10     -2.40405387E-08     -7.75183283E-07      2.15189537E+01     -1.26701220E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   220
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   221
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.08888100E+05      2.31431433E+04     -1.03393149E+05     -2.51171276E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   222
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.41062779E-01      1.41062390E-01      2.08135886E-05     -3.30476811E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   223
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     19 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.848644E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   224
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.981999E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   225
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     20 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   226
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821719E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919266E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   227
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   228
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL :  2.842164E-12 ; STRAIN ENERGY :  2.842425E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   229
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   230
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -3.17783547E-09      1.30961868E-07     -1.28789269E-07      2.15189499E+01     -1.26701616E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   231
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   232
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.08859228E+05      2.31280023E+04     -1.03369657E+05     -2.51026139E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   233
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.40852953E-01      1.40852564E-01      2.07689226E-05     -3.30452057E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   234
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     20 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.842425E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   235
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.981991E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   236
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     21 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   237
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821720E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919267E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   238
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   239
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL : -1.057058E-12 ; STRAIN ENERGY :  2.837806E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   240
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   241
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -4.23045119E-08      1.94048374E-08     -2.74562543E-06      2.15189500E+01     -1.26701350E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   242
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   243
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.08792329E+05      2.31098185E+04     -1.03308192E+05     -2.50823564E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   244
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.40619162E-01      1.40618772E-01      2.07853574E-05     -3.30653680E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   245
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     21 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.837806E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   246
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.982000E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   247
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ****************************************************
+                                   *  D E S I G N  C Y C L E     22 (ANALYSIS SUMMARY)*
+                                   ****************************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   248
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                M A S S / V O L U M E   S U M M A R Y
+
+                                       SYSTEM MASS              1.821719E-01
+                                       SYSTEM VOLUME            9.491749E+04
+                                       SYSTEM MASS/VOLUME       1.919266E-06
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   249
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              E N C L O S I N G   B O X    S U M M A R Y
+
+           LENGTH X          LENGTH Y          LENGTH Z           AREA XY           AREA YZ           AREA XZ        VOLUME XYZ
+       3.175000E+00      4.320000E+02      7.000000E+01      1.371600E+03      3.024000E+04      2.222500E+02      9.601200E+04
+
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   250
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                 S O L U T I O N   R E S I D U A L S
+
+ LOADCASE        1 ; RESIDUAL : -4.566096E-12 ; STRAIN ENERGY :  2.833512E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   251
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                   O L O A D   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1      1.00000001E+05      0.00000000E+00      0.00000000E+00      0.00000000E+00     -2.15189515E+01      1.26701385E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   252
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                S P C F O R C E   R E S U L T A N T S
+
+ LOADCASE           T1                  T2                  T3                  R1                  R2                  R3
+
+       1     -1.00000001E+05     -1.91840660E-09      5.09334618E-08      2.93565540E-06      2.15189502E+01     -1.26701056E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   253
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                              M A X I M U M   A P P L I E D   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1           133          5.82825000E+01      5.82825000E+01      0.00000000E+00      0.00000000E+00
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   254
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                                  M A X I M U M   S P C   F O R C E
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          6481          1.08734996E+05      2.30916240E+04     -1.03254698E+05     -2.50707717E+04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   255
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                               M A X I M U M   D I S P L A C E M E N T
+
+ LOADCASE      GRID ID             MAGNITUDE              T1                  T2                  T3
+
+       1          5839          1.40396238E-01      1.40395848E-01      2.07865502E-05     -3.30188482E-04
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   256
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     22 (DESIGN)  *
+                                   ********************************************
+
+  OBJECTIVE FUNCTION
+
+       OBJECTIVE FUNCTION VALUE =  2.833512E+03
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   257
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+  CONSTRAINT
+
+                                               MASS,VOLUME,MASSFR  
+       ----------------------------------------------------------------------------------------------
+                   PROP/MAT                            RESPONSE      BOUND        BOUND       BOUND
+       TYPE           ID         TYPE                  VALUE         TYPE         VALUE       STATUS
+       ----------------------------------------------------------------------------------------------
+       MASSFR             0        SYS              5.981995E-01      UB       6.000000E-01     A
+
+                                              BOUND TYPE  : UB = UPPER BOUND,   LB = LOWER BOUND
+                                              BOUND STATUS: I = INACTIVE, A = ACTIVE, V = VIOLATED
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   258
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                   ********************************************
+                                   *  D E S I G N  C Y C L E     22 (ANALYSIS)*
+                                   ********************************************
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   259
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                       R I G I D   B O D Y   M A S S   M A T R I X
+                                   I N   B A S I C   C O O R D I N A T E   S Y S T E M
+                                               A T   G R D P N T  =        0
+
+                           MX            MXY            MXZ           MTR11           MTR12         MTR13
+                           MYX           MY             MYZ           MTR21           MTR22         MTR23
+                           MZX           MZY            MZ            MTR31           MTR32         MTR33
+                          MTR11         MTR21          MTR31             IXX          -IXY          -IXZ
+                          MTR12         MTR22          MTR32            -IYX           IYY          -IYZ
+                          MTR13         MTR23          MTR33            -IZX          -IZY           IZZ 
+
+                      1.821719E-01   0.000000E+00   0.000000E+00   0.000000E+00   1.315938E-05  -2.329748E-03
+                      0.000000E+00   1.821719E-01   0.000000E+00  -1.315938E-05   0.000000E+00   5.061841E-06
+                      0.000000E+00   0.000000E+00   1.821719E-01   2.329748E-03  -5.061841E-06   0.000000E+00
+                      0.000000E+00  -1.315938E-05   2.329748E-03   2.569555E+03  -2.523630E-05  -1.311763E-03
+                      1.315938E-05   0.000000E+00  -5.061841E-06  -2.523630E-05   8.128118E+01   8.727706E-03
+                     -2.329748E-03   5.061841E-06   0.000000E+00  -1.311763E-03   8.727706E-03   2.488580E+03
+  
+
+                                          P R I N C I P A L   I N E R T I A S 
+                                              A T   G R D P N T  =       0
+
+                                           I1             I2             I3
+
+                                       2.569555E+03   2.488580E+03   8.128118E+01
+  
+
+                                  P R I N C I P A L   I N E R T I A   D I R E C T I O N S 
+                                              A T  G R D P N T  =       0
+
+                                           X1             X2             X3
+                                           Y1             Y2             Y3
+                                           Z1             Z2             Z3
+
+                                       1.000000E+00   1.619959E-05  -1.014018E-08
+                                      -1.019891E-08   3.625519E-06  -1.000000E+00
+                                      -1.619959E-05   1.000000E+00   3.625519E-06
+  
+
+                                           C E N T E R   O F   G R A V I T Y 
+                                 W I T H   R E S P E C T   T O   G R D P N T  =       0
+
+                             DIRECTION
+                          MASS AXIS SYSTEM     MASS          X-C.G.         Y-C.G.         Z-C.G.
+
+                                 X         1.821719E-01   0.000000E+00   1.278873E-02   7.223606E-05
+                                 Y         1.821719E-01   2.778606E-05   0.000000E+00   7.223606E-05
+                                 Z         1.821719E-01   2.778606E-05   1.278873E-02   0.000000E+00
+  
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   260
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+                                             S Y S T E M   I N E R T I A S  
+                                  I N   B A S I C   C O O R D I N A T E   S Y S T E M
+                                        A T   C E N T E R   O F   G R A V I T Y
+
+                                           IXX            IXY            IXZ
+                                           IYX            IYY            IYZ
+                                           IZX            IZY            IZZ
+
+                                       2.569555E+03   2.517157E-05   1.311763E-03
+                                       2.517157E-05   8.128118E+01  -8.727875E-03
+                                       1.311763E-03  -8.727875E-03   2.488580E+03
+  
+
+                                          P R I N C I P A L   I N E R T I A S 
+                                        A T   C E N T E R   O F   G R A V I T Y
+
+                                           I1             I2             I3
+
+                                       2.569555E+03   2.488580E+03   8.128118E+01
+  
+
+                                  P R I N C I P A L   I N E R T I A   D I R E C T I O N S 
+                                        A T   C E N T E R   O F   G R A V I T Y
+
+                                           X1             X2             X3
+                                           Y1             Y2             Y3
+                                           Z1             Z2             Z3
+
+                                       1.000000E+00   1.619958E-05  -1.011417E-08
+                                      -1.017290E-08   3.625589E-06  -1.000000E+00
+                                      -1.619958E-05   1.000000E+00   3.625589E-06
+  
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   261
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+
+                                                 ***********************************
+                                                 * H A R D   C O N V E R G E N C E *
+                                                 *    SMALL PROGRESS BEING MADE    *
+                                                 ***********************************
+
+ THERE ARE NO VIOLATED DESIGN CONSTRAINTS (GMAX = 5.0E-03).
+
+ THE ABSOLUTE CHANGE IN THE OBJECTIVE FUNCTION HAS
+ BEEN LESS THAN 6.051E+00 FOR TWO DESIGN CYCLES.
+1GENESIS   VERSION 18.0                                                                   DATE  06-30-2020  TIME  16:32  PAGE   262
+ OUTER_DRIVEPLATE_STUDY                                                  
+                                                                         
+
+ D E S I G N   C Y C L E   H I S T O R Y
+
+ DESIGN    OBJECTIVE   MAXIMUM CONSTRAINT
+  CYCLE    FUNCTION        VIOLATION
+
+    0     6.0506E+03         0.0%
+    1     5.4596E+03         0.0%
+    2     4.9426E+03         0.0%
+    3     4.5020E+03         0.0%
+    4     4.1277E+03         0.0%
+    5     3.8106E+03         0.0%
+    6     3.5403E+03         0.0%
+    7     3.3089E+03         0.0%
+    8     3.1060E+03         0.0%
+    9     3.0277E+03         0.0%
+   10     2.9800E+03         0.0%
+   11     2.9400E+03         0.0%
+   12     2.9715E+03         0.0%
+   13     2.9024E+03         0.0%
+   14     2.8935E+03         0.0%
+   15     2.8781E+03         0.0%
+   16     2.8720E+03         0.0%
+   17     2.8632E+03         0.0%
+   18     2.8547E+03         0.0%
+   19     2.8486E+03         0.0%
+   20     2.8424E+03         0.0%
+   21     2.8378E+03         0.0%
+   22     2.8335E+03         0.0%
+
+ ***** THE FOLLOWING WARNINGS WERE GENERATED DURING THE RUN:
+
+     WARNING CODE     COUNT
+     ------------ ---------
+        129758            1  
+        300151         1426 *
+
+     (*) ONLY THE FIRST  10 WARNING MESSAGES FOR EACH WARNING
+         CODE WERE PRINTED. TO PRINT ALL WARNING MESSAGES,
+         USE DIAG=111.
+
+
+ ***** THERE WERE        1 WARNING MESSAGES *****
+
+     RUN ENDED:    Jun 30, 2020 16:33
+
+1                                                      ***** END OF OUTPUT *****
